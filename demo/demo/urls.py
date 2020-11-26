@@ -22,10 +22,13 @@ from django.conf.urls.static import static
 from article import views
 
 urlpatterns = [
-            path("", views.home, name='home'),
+        path("", views.home),
+        path('article/', views.article_list),
         path('admin/', admin.site.urls),
-        path('article/<int:pk>/', views.article_detail, name='article_detail'),
-        path('article/', views.article_list,name='article_list'),
+        path('article/1/', views.article_1),
+        path('article/2/', views.article_2),
+        path('article/3/', views.article_3),
+
 
 
 
