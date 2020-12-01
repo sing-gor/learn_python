@@ -18,8 +18,9 @@ from django.urls import path,re_path
 
 from django.conf import settings
 from django.conf.urls.static import static
+from demo import views
 
-from article import views
+
 
 urlpatterns = [
         path("", views.home),
@@ -27,8 +28,5 @@ urlpatterns = [
         path('article/1/', views.article_1),
         path('article/2/', views.article_2),
         path('article/3/', views.article_3),
-
-
-
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
