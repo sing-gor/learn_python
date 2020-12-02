@@ -28,5 +28,6 @@ urlpatterns = [
         path('article/1/', views.article_1),
         path('article/2/', views.article_2),
         path('article/3/', views.article_3),
+        path('article/4/', views.article_4),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
